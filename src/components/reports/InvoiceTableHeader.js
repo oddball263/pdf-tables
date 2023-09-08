@@ -1,5 +1,5 @@
-import React from 'react';
-import {Text, View, StyleSheet } from '@react-pdf/renderer';
+import React from 'react'
+import { Text, View, StyleSheet } from '@react-pdf/renderer'
 
 const borderColor = '#90e5fc'
 const styles = StyleSheet.create({
@@ -30,17 +30,17 @@ const styles = StyleSheet.create({
         borderRightWidth: 1,
     },
     amount: {
-        width: '15%'
+        width: '15%',
     },
-  });
+})
 
-  const InvoiceTableHeader = () => (
+const InvoiceTableHeader = () => (
     <View style={styles.container}>
         <Text style={styles.description}>Item Description</Text>
         <Text style={styles.qty}>Qty</Text>
         <Text style={styles.rate}>@</Text>
         <Text style={styles.amount}>Amount</Text>
     </View>
-  );
-  
-  export default InvoiceTableHeader
+)
+
+export default InvoiceTableHeader
